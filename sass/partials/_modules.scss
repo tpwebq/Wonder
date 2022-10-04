@@ -1,0 +1,31 @@
+@include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
+
+.bg{
+    &-teal-dark{
+        background-color: $color__teal--dark!important;
+    }
+}
+.border{
+    &-teal-dark{
+        border-color: $color__teal--dark!important;
+    }
+}
+.comingsoon{
+    &-s1{
+        background-position-x: center!important;
+    }
+}
+.privacy{
+    &-s1{
+        background-position-x: center!important;
+    }
+}
+
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+    &-teal-dark{
+        color: $color__teal--dark!important;
+    }
+}

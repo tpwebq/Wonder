@@ -1,2 +1,16 @@
-$prefix: "../../";
+$prefix: "../";
+$color__teal--dark:#3c5552;
 $footer-height: 33px;
+$img__comingsoon: $prefix+"img/comingsoon.jpg";
+$img__error: $prefix+"img/error.jpg";
+$img__footer: $prefix+"img/footer.jpg";
+$img__privacy: $prefix+"img/privacy.jpg";
+$img__aoa:
+    $img__comingsoon,
+    $img__error,
+    $img__privacy;
+$img__classes:
+    "comingsoon",
+    "error",
+    "privacy";
+$text__shadow: 1px 1px 3px #333;
