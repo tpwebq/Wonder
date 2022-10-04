@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <script src="angular-1.8.2/angular.min.js"></script>
+        <script src="angular-1.8.2/angular-route.min.js"></script>
+        <script>
+            angular.module("app",['ngRoute'])
+            .config(function($routeProvider){
+                $routeProvider.when("/",{
+                    templateUrl: "app/templates/comingsoon.html"
+                })
+                .when("/privacy",{
+                    templateUrl: "app/templates/privacy.html"
+                })
+                .otherwise({
+                    templateUrl: "app/templates/error.html"
+                });
+            })
+            .controller("mainctrl",function($scope){});
+        </script>
+        <script src="app/footer.js"></script>
+        <title></title>
+    </head>
+    <body class="h-vh-100 bg-secondary" data-ng-cloak>
+        <div data-ng-view></div>
+        <app-footer></app-footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

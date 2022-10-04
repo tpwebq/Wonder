@@ -289,3 +289,59 @@
 body, html {
   min-height: 100vh;
 }
+
+/* line 31, ../sass/partials/_mixins.scss */
+.comingsoon-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/comingsoon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.error-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/error.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../sass/partials/_mixins.scss */
+.privacy-s1 {
+  background-attachment: scroll;
+  background-image: url(../img/privacy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 4, ../sass/partials/_modules.scss */
+.bg-teal-dark {
+  background-color: #3c5552 !important;
+}
+
+/* line 9, ../sass/partials/_modules.scss */
+.border-teal-dark {
+  border-color: #3c5552 !important;
+}
+
+/* line 14, ../sass/partials/_modules.scss */
+.comingsoon-s1 {
+  background-position-x: center !important;
+}
+
+/* line 19, ../sass/partials/_modules.scss */
+.privacy-s1 {
+  background-position-x: center !important;
+}
+
+/* line 25, ../sass/partials/_modules.scss */
+.text-shadow {
+  text-shadow: 1px 1px 3px #333;
+}
+/* line 28, ../sass/partials/_modules.scss */
+.text-teal-dark {
+  color: #3c5552 !important;
+}
