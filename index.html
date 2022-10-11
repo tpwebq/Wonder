@@ -8,26 +8,33 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <script src="angular-1.8.2/angular.min.js"></script>
         <script src="angular-1.8.2/angular-route.min.js"></script>
-        <script>
-            angular.module("app",['ngRoute'])
-            .config(function($routeProvider){
-                $routeProvider.when("/",{
-                    templateUrl: "app/templates/comingsoon.html"
-                })
-                .when("/privacy",{
-                    templateUrl: "app/templates/privacy.html"
-                })
-                .otherwise({
-                    templateUrl: "app/templates/error.html"
-                });
-            })
-            .controller("mainctrl",function($scope){});
-        </script>
-        <script src="app/footer.js"></script>
+        <script src="angular-1.8.2/angular-sanitize.min.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/components/basket-s1.js"></script>
+        <script src="app/components/conferences-s1.js"></script>
+        <script src="app/components/conferences-filter-list.js"></script>
+        <script src="app/components/conferences-list.js"></script>    
+        <script src="app/components/contact-s1.js"></script>
+        <script src="app/components/contact-s2.js"></script>
+        <script src="app/components/contact-s3.js"></script>
+        <script src="app/components/footer.js"></script>
+        <script src="app/components/index-s1.js"></script>
+        <script src="app/components/navbar.js"></script>
+        <script src="app/components/order-details.js"></script>
+        <script src="app/components/payment-data.js"></script>
+        <script src="app/components/personal-data.js"></script>
+        <script src="app/components/tips-s1.js"></script>
+        <script src="app/components/tips-s2.js"></script>    
         <title></title>
     </head>
-    <body class="h-vh-100 bg-secondary" data-ng-cloak>
-        <div data-ng-view></div>
+    <body class="h-vh-100 bg-light" data-ng-cloak>
+        <app-navbar></app-navbar>
+        <main class="ng-view">
+            <div class=" text-center">
+                <span class="spinner spinner-border text-light"></span>
+                <p class="text-white fw-bold">Loading...</p>
+            </div>
+        </main>
         <app-footer></app-footer>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
